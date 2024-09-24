@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency Landing Page</title>
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Travel Agency</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#destinations">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tours">Tours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1>Explore the World with Us</h1>
+        <p>Discover amazing places and create unforgettable memories</p>
+        <a href="#destinations" class="btn btn-primary btn-lg"
+          >Start Your Journey</a
+        >
+      </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Popular Destinations</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="/images/Paris, France.jpg"
+                class="card-img-top"
+                alt="Destination 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Paris, France</h5>
+                <p class="card-text">
+                  Experience the romantic city of Paris and visit famous
+                  landmarks like the Eiffel Tower.
+                </p>
+                <a href="#" class="btn btn-outline-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="/images/Bali, Indonesia.jpg"
+                class="card-img-top"
+                alt="Destination 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bali, Indonesia</h5>
+                <p class="card-text">
+                  Enjoy the tropical paradise of Bali with its stunning beaches
+                  and vibrant culture.
+                </p>
+                <a href="#" class="btn btn-outline-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="/images/Kyoto, Japan.jpg"
+                class="card-img-top"
+                alt="Destination 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kyoto, Japan</h5>
+                <p class="card-text">
+                  Explore the historical temples and beautiful cherry blossoms
+                  in the heart of Japan.
+                </p>
+                <a href="#" class="btn btn-outline-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Exclusive Tour Packages</h2>
+        <div class="accordion" id="tourAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                European Adventure
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#tourAccordion"
+            >
+              <div class="accordion-body">
+                Explore the best of Europe with stops in Paris, Rome, and
+                Berlin. A perfect blend of culture, history, and adventure.
+                <a href="#" class="btn btn-link">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Tropical Escape
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#tourAccordion"
+            >
+              <div class="accordion-body">
+                Relax in the tropics with our luxurious beach resorts in Bali,
+                Maldives, and Hawaii. Perfect for those seeking tranquility and
+                beauty.
+                <a href="#" class="btn btn-link">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Asian Discovery
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#tourAccordion"
+            >
+              <div class="accordion-body">
+                Journey through Asia’s vibrant cities and peaceful countryside
+                with stops in Japan, Thailand, and China. Immerse yourself in
+                the culture and beauty of the East.
+                <a href="#" class="btn btn-link">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="destination" class="form-label"
+              >Destination of Interest</label
+            >
+            <select class="form-select" id="destination">
+              <option selected>Select a Destination</option>
+              <option value="paris">Paris</option>
+              <option value="bali">Bali</option>
+              <option value="kyoto">Kyoto</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="3"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+      <p>
+        &copy; 2024 Designed By <span> Zarrad Iheb </span> All Right Reserve
+      </p>
+      <p>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
