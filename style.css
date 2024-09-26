@@ -1,5 +1,5 @@
 .hero-section {
-  background: url("/images/bg-hero-section.jpg") no-repeat center center/cover;
+  background: url("./images/bg-hero-section.jpg") no-repeat center center/cover;
   height: 100vh;
   color: white;
   text-align: center;
